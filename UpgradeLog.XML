@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ETL Framework">
+</Property><Property Name="Solution File" Value="C:\Users\CA1\Documents\Visual Studio 2008\Projects\ETL Framework\ETL Framework.sln">
+</Property><Property Name="User Options File" Value="C:\Users\CA1\Documents\Visual Studio 2008\Projects\ETL Framework\ETL Framework.suo">
+</Property><Property Name="Date" Value="22 September 2013">
+</Property><Property Name="Time" Value="19:37">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="ETL Framework.sln" Description="File successfully backed up as C:\Users\CA1\Documents\Visual Studio 2008\Projects\ETL Framework\Backup\ETL Framework.sln">
+</Event><Event ErrorLevel="0" Project="" Source="ETL Framework.suo" Description="File successfully backed up as C:\Users\CA1\Documents\Visual Studio 2008\Projects\ETL Framework\Backup\ETL Framework.suo">
+</Event><Event ErrorLevel="0" Project="ETL Framework" Source="ETL Framework.database" Description="File successfully backed up as C:\Users\CA1\Documents\Visual Studio 2008\Projects\ETL Framework\Backup\ETL Framework\ETL Framework.database">
+</Event><Event ErrorLevel="0" Project="ETL Framework" Source="EtlFrameworkRuntime.dtsx" Description="File successfully backed up as C:\Users\CA1\Documents\Visual Studio 2008\Projects\ETL Framework\Backup\ETL Framework\EtlFrameworkRuntime.dtsx">
+</Event><Event ErrorLevel="0" Project="ETL Framework" Source="JobAPackageA.dtsx" Description="File successfully backed up as C:\Users\CA1\Documents\Visual Studio 2008\Projects\ETL Framework\Backup\ETL Framework\JobAPackageA.dtsx">
+</Event><Event ErrorLevel="0" Project="ETL Framework" Source="JobAPackageB.dtsx" Description="File successfully backed up as C:\Users\CA1\Documents\Visual Studio 2008\Projects\ETL Framework\Backup\ETL Framework\JobAPackageB.dtsx">
+</Event><Event ErrorLevel="0" Project="ETL Framework" Source="RegexEngine.dtsx" Description="File successfully backed up as C:\Users\CA1\Documents\Visual Studio 2008\Projects\ETL Framework\Backup\ETL Framework\RegexEngine.dtsx">
+</Event><Event ErrorLevel="0" Project="ETL Framework" Source="ETL Framework.dtproj" Description="File successfully backed up as C:\Users\CA1\Documents\Visual Studio 2008\Projects\ETL Framework\Backup\ETL Framework\ETL Framework.dtproj">
+</Event><Event ErrorLevel="3" Project="ETL Framework" Source="ETL Framework.dtproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ETL Framework" Source="ETL Framework.dtproj" Description="Project converted successfully.">
+</Event><Event ErrorLevel="0" Project="" Source="ETL Framework.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ETL Framework.sln" Description="Converted">
+</Event></UpgradeLog>

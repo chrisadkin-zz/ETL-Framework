@@ -1,0 +1,2132 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="10/27/2012 10:11:49 PM"
+  DTS:CreationName="SSIS.Package.3"
+  DTS:CreatorComputerName="CA1-THINK"
+  DTS:CreatorName="CA1-THINK\CA1"
+  DTS:DTSID="{BD7258E6-8A3B-4714-8DBB-C752ACB96FB0}"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:LastModifiedProductVersion="11.0.5583.0"
+  DTS:LocaleID="2057"
+  DTS:ObjectName="EtlFrameworkRuntime"
+  DTS:PackageType="5"
+  DTS:VersionBuild="102"
+  DTS:VersionGUID="{165A852D-B474-4962-8AFE-016F54561E26}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="3"
+      DTS:DTSID="{2F720605-F71A-4991-B8C4-C9E1F03CA389}"
+      DTS:ObjectName="ApplicationId">
+      <DTS:Property
+        DTS:DataType="3"
+        DTS:Name="ParameterValue">0</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:DTSID="{40B69315-C652-4416-85AE-ECC9E498CBE4}"
+      DTS:ObjectName="JobName">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">Test</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{14DD6798-E041-46A7-B002-32E101AF0D57}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="CatalogLoggingLevel_Channel1">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A9D40696-B64E-48E1-9C8F-D8A1EF4CCC02}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="CatalogLoggingLevel_Channel2">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{99C54B7A-D8C6-4E8D-9569-9912B6C0B7DC}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="CatalogLoggingLevel_Channel3">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{6C659D02-950B-4170-9268-013D2354EBB3}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="CatalogLoggingLevel_Channel4">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{360E8F21-A6D4-472F-9386-2D40B4ABD5AD}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="CatalogLoggingLevel_Channel5">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{7ECEB9A7-54E4-47DF-93F3-FBB630E0A938}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="CatalogLoggingLevel_Channel6">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D0B23EAA-7C4F-4FFB-A77D-F24A5D0CC8BA}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="CatalogLoggingLevel_Channel7">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9FAB2419-C07C-4A60-AD56-0673DFF79307}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="CatalogLoggingLevel_Channel8">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{DE6D8418-8C65-4416-8F3F-95468AD78AFD}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Channel_1">
+      <DTS:VariableValue
+        DTS:DataType="3">1</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1CADC72D-9C08-4A8A-BB08-246726FB0ECB}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Channel_2">
+      <DTS:VariableValue
+        DTS:DataType="3">2</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D77B9D29-BEB9-4806-B5D8-BD1FD7AA07FC}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Channel_3">
+      <DTS:VariableValue
+        DTS:DataType="3">3</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{EC852A27-1783-4114-A944-3C68D3238FE8}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Channel_4">
+      <DTS:VariableValue
+        DTS:DataType="3">4</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C189A977-EB55-4483-89DA-9638F95CC45E}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Channel_5">
+      <DTS:VariableValue
+        DTS:DataType="3">5</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4B6EC313-B9DB-4C7B-B03D-CD64DEE7B1B6}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Channel_6">
+      <DTS:VariableValue
+        DTS:DataType="3">6</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4144055A-6A14-4589-A359-35E3659E86AF}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Channel_7">
+      <DTS:VariableValue
+        DTS:DataType="3">7</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{CF91F457-9628-4557-9B0D-DD83E78FCBEF}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Channel_8">
+      <DTS:VariableValue
+        DTS:DataType="3">8</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C0176604-362A-44E0-A0B8-86D4E263CB05}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="ExecutionId">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{5F099730-ADE1-4913-BC86-B4C9B7EB8A1D}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="ExecutionOrder">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{006D50FC-6042-441C-BD3B-2D27533348A9}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Folder_Channel1">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{8EDD61F9-6A3A-47A7-9C4C-4ADB7AE104C1}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Folder_Channel2">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{DBC615A7-8981-4109-B93B-B5EB9CF7D2CA}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Folder_Channel3">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F9D54E15-C01D-4EC2-B7A9-F9F62B502507}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Folder_Channel4">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{56254C99-6B07-4B7A-BD17-1AEF700BC6A9}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Folder_Channel5">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{FDDF82DB-C952-4759-8CC5-DE03A3C01A9E}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Folder_Channel6">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{15CC2952-5F61-42FC-A12F-3FB01E79D6EF}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Folder_Channel7">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{2A022DB8-A1ED-4D8C-B33D-58B6C2385593}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Folder_Channel8">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A4789275-EB1A-44D7-A170-9DC0F1EF991C}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IntParameer_Channel7">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{67A1C454-697C-4B2D-8B49-BF265D737175}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IntParameter_Channel1">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{60475C0B-1B6A-4B57-8642-3D9A026FD79D}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IntParameter_Channel2">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C7C5A375-21F8-4F66-A430-B6C36047215A}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IntParameter_Channel3">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{B70D9CCC-2FD9-4184-ADD6-067318B5119B}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IntParameter_Channel4">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{016F4931-1AFB-4102-A89E-9FD4EAE4D86A}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IntParameter_Channel5">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{EA51051F-71B8-4EC2-8A68-81552B2CF61E}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IntParameter_Channel6">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{2D7B5AC0-53FE-45EF-B040-1342354BBC3A}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IntParameter_Channel7">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{354AC335-CB43-44EC-A161-3FAC021D2A71}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="IntParameter_Channel8">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{79EFDD79-9522-49BC-A067-CFE00727A7A0}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="JobId">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A6C316E2-107A-4F6B-A976-C92DDEA793D3}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="JobName">
+      <DTS:VariableValue
+        DTS:DataType="8">Test</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E9D1B6C4-3BD5-4F8F-83DE-5506E2B837F8}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="PackageId_Channel1">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F6C61C38-1FCD-4E08-9631-494CDBB9E657}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="PackageId_Channel2">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{23830B59-612D-4EF9-98BA-C63B2A79F54C}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="PackageId_Channel3">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{048409F3-89A7-4C88-A00C-92C6488A90F6}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="PackageId_Channel4">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{BE207572-A93E-46DC-B865-EEE7C0E88AEF}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="PackageId_Channel5">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{71A32B3E-2655-434B-95FC-044FF64CF6D4}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="PackageId_Channel6">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{39FD7045-9B2A-49AD-B660-4FBF27BEB4D6}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="PackageId_Channel7">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{781F7086-BDDE-455E-8B78-0226DEC942D8}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="PackageId_Channel8">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C55F62D3-076A-4072-9D91-C5723EAD7168}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="PackageName_Channel1">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{30D5FEFB-7A1C-446C-8451-DB7309782445}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="PackageName_Channel2">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F794B68A-3635-4F12-BB42-822A8EBEC4E9}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="PackageName_Channel3">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{EE18284A-96E9-4B41-B97F-AAF55A0984D9}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="PackageName_Channel4">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{9571A4B8-B04B-4D51-A9F6-5040CE7482E7}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="PackageName_Channel5">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{87FBAF36-7768-47F5-AC15-85CF13DE7554}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="PackageName_Channel6">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{06E97171-89E5-4822-8F4C-55DB5CDA5133}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="PackageName_Channel7">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{CDD0565E-DDD3-49A5-8F4D-13471DC1EB9E}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="PackageName_Channel8">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{76F5B2CC-E0A6-4C1A-9B26-31BFE2628FC8}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="PackagesToRun">
+      <DTS:VariableValue
+        DTS:DataSubType="ManagedSerializable"
+        DTS:DataType="13">
+        <SOAP-ENV:Envelope xmlns:clr="http://schemas.microsoft.com/soap/encoding/clr/1.0" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/">
+          <SOAP-ENV:Body>
+            <xsd:anyType
+              id="ref-1"></xsd:anyType>
+          </SOAP-ENV:Body>
+        </SOAP-ENV:Envelope>
+      </DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{52370076-4F9B-45C9-A356-22A7E2D3CAC5}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Project_Channel1">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D35055D2-CDCE-40C2-8914-AA32FEE951E9}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Project_Channel2">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{03DFDB05-5FF2-490F-B271-B0E02234B68C}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Project_Channel3">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{DDA73CFD-6B83-4579-A215-AC2563287278}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Project_Channel4">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{F362170E-4B26-4195-B441-B39C2B1A2777}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Project_Channel5">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{CC8FE68C-B1BF-4CCA-B350-7A6AD198E098}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Project_Channel6">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E36032CB-F1FC-4763-8D0E-94F969F310E1}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Project_Channel7">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{220278D4-D772-4FBA-8388-AEBAF931225E}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="Project_Channel8">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{7B4847D9-3AC3-4829-8382-C5E487DB1397}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Use32BitRunTime_Channel1">
+      <DTS:VariableValue
+        DTS:DataType="11">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{DA91ADDA-AE2E-4679-B4B6-084458665F0A}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Use32BitRunTime_Channel2">
+      <DTS:VariableValue
+        DTS:DataType="11">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{179AC959-EE50-4754-915F-DB7390B107C1}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Use32BitRunTime_Channel3">
+      <DTS:VariableValue
+        DTS:DataType="11">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{51734D97-6A94-40F0-BF8C-2306F629DE81}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Use32BitRunTime_Channel4">
+      <DTS:VariableValue
+        DTS:DataType="11">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{4162F414-FDA5-43F8-B472-D6157D3941D1}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Use32BitRunTime_Channel5">
+      <DTS:VariableValue
+        DTS:DataType="11">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{A1F3A836-C767-4FF0-96A9-C74D69EE0011}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Use32BitRunTime_Channel6">
+      <DTS:VariableValue
+        DTS:DataType="11">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{577771BF-303E-4F9A-803D-62C7621C0094}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Use32BitRunTime_Channel7">
+      <DTS:VariableValue
+        DTS:DataType="11">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{94155CCF-5113-4FA8-A35B-7D99B5AC4D2D}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Use32BitRunTime_Channel8">
+      <DTS:VariableValue
+        DTS:DataType="11">0</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{0D9AE10D-72CA-4C0D-844F-87E306290519}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="VarcharParameter_Channel1">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{2CC74287-067E-49C3-AE4F-89A69BC7EE2E}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="VarcharParameter_Channel2">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{DD34216A-A29A-41BB-ACBD-F56A2EA9378C}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="VarcharParameter_Channel3">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{E874DA82-F5D3-4086-9858-FEAAFD78E8F5}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="VarcharParameter_Channel4">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1E053BDC-90A5-4B18-BC47-6973BFA736D8}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="VarcharParameter_Channel5">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{06F15F38-93AE-43AD-A02E-EDE19192EDCB}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="VarcharParameter_Channel6">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{C55F4269-244C-4B78-A5F3-A1583E824231}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="VarcharParameter_Channel7">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{953A0A36-D18A-47C9-9F4A-8A02071EB841}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="VarcharParameter_Channel8">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\SEQ_ExecutionFactory"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DisableEventHandlers="True"
+      DTS:DTSID="{64423FB5-AD2E-4CFF-9A9A-832A03CCD44D}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SEQ_ExecutionFactory">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\SEQ_ExecutionFactory\FOR_ExecutionPackage"
+          DTS:CreationName="STOCK:FOREACHLOOP"
+          DTS:Description="Foreach Loop Container"
+          DTS:DisableEventHandlers="True"
+          DTS:DTSID="{34E1E6D5-A8A1-484E-AD8B-42D5A570FC3E}"
+          DTS:ExecutableType="STOCK:FOREACHLOOP"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="FOR_ExecutionPackage">
+          <DTS:ForEachEnumerator
+            DTS:CreationName="Microsoft.SqlServer.Dts.Runtime.Enumerators.ADO.ForEachADOEnumerator, Microsoft.SqlServer.ForEachADOEnumerator, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+            DTS:DTSID="{EBA352FF-5DE4-42BC-8EE5-7AE332E9B7BB}"
+            DTS:ObjectName="{EBA352FF-5DE4-42BC-8EE5-7AE332E9B7BB}">
+            <DTS:ObjectData>
+              <FEEADO
+                EnumType="EnumerateRowsInFirstTable"
+                VarName="User::PackagesToRun" />
+            </DTS:ObjectData>
+          </DTS:ForEachEnumerator>
+          <DTS:Variables />
+          <DTS:Executables>
+            <DTS:Executable
+              DTS:refId="Package\SEQ_ExecutionFactory\FOR_ExecutionPackage\EPT_PackageExecutionFactory CH1"
+              DTS:CreationName="SSIS.ExecutePackageTask.3"
+              DTS:Description="Execute Package Task"
+              DTS:DisableEventHandlers="True"
+              DTS:DTSID="{A1C03F2E-F8B2-48C2-853D-739EA9AA0AB6}"
+              DTS:ExecutableType="SSIS.ExecutePackageTask.3"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="EPT_PackageExecutionFactory CH1"
+              DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:ObjectData>
+                <ExecutePackageTask>
+                  <UseProjectReference>True</UseProjectReference>
+                  <PackageName>EtlPackageExecutionFactory.dtsx</PackageName>
+                  <ParameterAssignment>
+                    <ParameterName>ChannelId</ParameterName>
+                    <BindedVariableOrParameterName>User::Channel_1</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>ExecutionId</ParameterName>
+                    <BindedVariableOrParameterName>User::ExecutionId</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Folder</ParameterName>
+                    <BindedVariableOrParameterName>User::Folder_Channel1</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>IntParameter</ParameterName>
+                    <BindedVariableOrParameterName>User::IntParameter_Channel1</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>VarcharParameter</ParameterName>
+                    <BindedVariableOrParameterName>User::VarcharParameter_Channel1</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>PackageId</ParameterName>
+                    <BindedVariableOrParameterName>User::PackageId_Channel1</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Project</ParameterName>
+                    <BindedVariableOrParameterName>User::Project_Channel1</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>PackageName</ParameterName>
+                    <BindedVariableOrParameterName>User::PackageName_Channel1</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Use32BitRunTime</ParameterName>
+                    <BindedVariableOrParameterName>User::Use32BitRunTime_Channel1</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>CatalogLoggingLevel</ParameterName>
+                    <BindedVariableOrParameterName>User::CatalogLoggingLevel_Channel1</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>JobId</ParameterName>
+                    <BindedVariableOrParameterName>User::JobId</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                </ExecutePackageTask>
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\SEQ_ExecutionFactory\FOR_ExecutionPackage\EPT_PackageExecutionFactory CH2"
+              DTS:CreationName="SSIS.ExecutePackageTask.3"
+              DTS:Description="Execute Package Task"
+              DTS:DisableEventHandlers="True"
+              DTS:DTSID="{a8f39eb8-2fe1-41e4-ac4b-f55134e9bc94}"
+              DTS:ExecutableType="SSIS.ExecutePackageTask.3"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="EPT_PackageExecutionFactory CH2"
+              DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:PropertyExpression
+                DTS:Name="Disable">@[User::PackageName_Channel2] == "Disable Channel"</DTS:PropertyExpression>
+              <DTS:ObjectData>
+                <ExecutePackageTask>
+                  <UseProjectReference>True</UseProjectReference>
+                  <PackageName>EtlPackageExecutionFactory.dtsx</PackageName>
+                  <ParameterAssignment>
+                    <ParameterName>ChannelId</ParameterName>
+                    <BindedVariableOrParameterName>User::Channel_2</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>ExecutionId</ParameterName>
+                    <BindedVariableOrParameterName>User::ExecutionId</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Folder</ParameterName>
+                    <BindedVariableOrParameterName>User::Folder_Channel2</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>IntParameter</ParameterName>
+                    <BindedVariableOrParameterName>User::IntParameter_Channel2</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>VarcharParameter</ParameterName>
+                    <BindedVariableOrParameterName>User::VarcharParameter_Channel2</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>PackageId</ParameterName>
+                    <BindedVariableOrParameterName>User::PackageId_Channel2</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Project</ParameterName>
+                    <BindedVariableOrParameterName>User::Project_Channel2</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>PackageName</ParameterName>
+                    <BindedVariableOrParameterName>User::PackageName_Channel2</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>CatalogLoggingLevel</ParameterName>
+                    <BindedVariableOrParameterName>User::CatalogLoggingLevel_Channel2</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>JobId</ParameterName>
+                    <BindedVariableOrParameterName>User::JobId</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                </ExecutePackageTask>
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\SEQ_ExecutionFactory\FOR_ExecutionPackage\EPT_PackageExecutionFactory CH3"
+              DTS:CreationName="SSIS.ExecutePackageTask.3"
+              DTS:Description="Execute Package Task"
+              DTS:DisableEventHandlers="True"
+              DTS:DTSID="{22096343-69df-4381-8b94-f9db4e2a9423}"
+              DTS:ExecutableType="SSIS.ExecutePackageTask.3"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="EPT_PackageExecutionFactory CH3"
+              DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:PropertyExpression
+                DTS:Name="Disable">@[User::PackageName_Channel3] == "Disable Channel"</DTS:PropertyExpression>
+              <DTS:ObjectData>
+                <ExecutePackageTask>
+                  <UseProjectReference>True</UseProjectReference>
+                  <PackageName>EtlPackageExecutionFactory.dtsx</PackageName>
+                  <ParameterAssignment>
+                    <ParameterName>ChannelId</ParameterName>
+                    <BindedVariableOrParameterName>User::Channel_3</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>ExecutionId</ParameterName>
+                    <BindedVariableOrParameterName>User::ExecutionId</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Folder</ParameterName>
+                    <BindedVariableOrParameterName>User::Folder_Channel3</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>IntParameter</ParameterName>
+                    <BindedVariableOrParameterName>User::IntParameter_Channel3</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>VarcharParameter</ParameterName>
+                    <BindedVariableOrParameterName>User::VarcharParameter_Channel3</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>PackageId</ParameterName>
+                    <BindedVariableOrParameterName>User::PackageId_Channel3</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Project</ParameterName>
+                    <BindedVariableOrParameterName>User::Project_Channel3</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>PackageName</ParameterName>
+                    <BindedVariableOrParameterName>User::PackageName_Channel3</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Use32BitRunTime</ParameterName>
+                    <BindedVariableOrParameterName>User::Use32BitRunTime_Channel3</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>CatalogLoggingLevel</ParameterName>
+                    <BindedVariableOrParameterName>User::CatalogLoggingLevel_Channel3</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>JobId</ParameterName>
+                    <BindedVariableOrParameterName>User::JobId</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                </ExecutePackageTask>
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\SEQ_ExecutionFactory\FOR_ExecutionPackage\EPT_PackageExecutionFactory CH4"
+              DTS:CreationName="SSIS.ExecutePackageTask.3"
+              DTS:Description="Execute Package Task"
+              DTS:DisableEventHandlers="True"
+              DTS:DTSID="{7dc9d2fb-52ef-4c7e-ae78-3d4c86759094}"
+              DTS:ExecutableType="SSIS.ExecutePackageTask.3"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="EPT_PackageExecutionFactory CH4"
+              DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:PropertyExpression
+                DTS:Name="Disable">@[User::PackageName_Channel4] == "Disable Channel"</DTS:PropertyExpression>
+              <DTS:ObjectData>
+                <ExecutePackageTask>
+                  <UseProjectReference>True</UseProjectReference>
+                  <PackageName>EtlPackageExecutionFactory.dtsx</PackageName>
+                  <ParameterAssignment>
+                    <ParameterName>ChannelId</ParameterName>
+                    <BindedVariableOrParameterName>User::Channel_4</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>ExecutionId</ParameterName>
+                    <BindedVariableOrParameterName>User::ExecutionId</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Folder</ParameterName>
+                    <BindedVariableOrParameterName>User::Folder_Channel4</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>IntParameter</ParameterName>
+                    <BindedVariableOrParameterName>User::IntParameter_Channel4</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>VarcharParameter</ParameterName>
+                    <BindedVariableOrParameterName>User::VarcharParameter_Channel4</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>PackageId</ParameterName>
+                    <BindedVariableOrParameterName>User::PackageId_Channel4</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Project</ParameterName>
+                    <BindedVariableOrParameterName>User::Project_Channel4</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>PackageName</ParameterName>
+                    <BindedVariableOrParameterName>User::PackageName_Channel4</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Use32BitRunTime</ParameterName>
+                    <BindedVariableOrParameterName>User::Use32BitRunTime_Channel4</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>CatalogLoggingLevel</ParameterName>
+                    <BindedVariableOrParameterName>User::CatalogLoggingLevel_Channel4</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>JobId</ParameterName>
+                    <BindedVariableOrParameterName>User::JobId</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                </ExecutePackageTask>
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\SEQ_ExecutionFactory\FOR_ExecutionPackage\EPT_PackageExecutionFactory CH5"
+              DTS:CreationName="SSIS.ExecutePackageTask.3"
+              DTS:Description="Execute Package Task"
+              DTS:DisableEventHandlers="True"
+              DTS:DTSID="{5cbfe68a-6ca1-4514-a1cd-54a650f4e334}"
+              DTS:ExecutableType="SSIS.ExecutePackageTask.3"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="EPT_PackageExecutionFactory CH5"
+              DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:PropertyExpression
+                DTS:Name="Disable">@[User::PackageName_Channel5] == "Disable Channel"</DTS:PropertyExpression>
+              <DTS:ObjectData>
+                <ExecutePackageTask>
+                  <UseProjectReference>True</UseProjectReference>
+                  <PackageName>EtlPackageExecutionFactory.dtsx</PackageName>
+                  <ParameterAssignment>
+                    <ParameterName>ChannelId</ParameterName>
+                    <BindedVariableOrParameterName>User::Channel_5</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>ExecutionId</ParameterName>
+                    <BindedVariableOrParameterName>User::ExecutionId</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Folder</ParameterName>
+                    <BindedVariableOrParameterName>User::Folder_Channel5</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>IntParameter</ParameterName>
+                    <BindedVariableOrParameterName>User::IntParameter_Channel5</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>VarcharParameter</ParameterName>
+                    <BindedVariableOrParameterName>User::VarcharParameter_Channel5</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>PackageId</ParameterName>
+                    <BindedVariableOrParameterName>User::PackageId_Channel5</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Project</ParameterName>
+                    <BindedVariableOrParameterName>User::Project_Channel5</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>PackageName</ParameterName>
+                    <BindedVariableOrParameterName>User::PackageName_Channel5</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Use32BitRunTime</ParameterName>
+                    <BindedVariableOrParameterName>User::Use32BitRunTime_Channel5</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>CatalogLoggingLevel</ParameterName>
+                    <BindedVariableOrParameterName>User::CatalogLoggingLevel_Channel5</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>JobId</ParameterName>
+                    <BindedVariableOrParameterName>User::JobId</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                </ExecutePackageTask>
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\SEQ_ExecutionFactory\FOR_ExecutionPackage\EPT_PackageExecutionFactory CH6"
+              DTS:CreationName="SSIS.ExecutePackageTask.3"
+              DTS:Description="Execute Package Task"
+              DTS:DisableEventHandlers="True"
+              DTS:DTSID="{cfebdf34-ade7-4ea2-a400-8493d6d40d92}"
+              DTS:ExecutableType="SSIS.ExecutePackageTask.3"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="EPT_PackageExecutionFactory CH6"
+              DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:PropertyExpression
+                DTS:Name="Disable">@[User::PackageName_Channel6] == "Disable Channel"</DTS:PropertyExpression>
+              <DTS:ObjectData>
+                <ExecutePackageTask>
+                  <UseProjectReference>True</UseProjectReference>
+                  <PackageName>EtlPackageExecutionFactory.dtsx</PackageName>
+                  <ParameterAssignment>
+                    <ParameterName>ChannelId</ParameterName>
+                    <BindedVariableOrParameterName>User::Channel_6</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>ExecutionId</ParameterName>
+                    <BindedVariableOrParameterName>User::ExecutionId</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Folder</ParameterName>
+                    <BindedVariableOrParameterName>User::Folder_Channel6</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>IntParameter</ParameterName>
+                    <BindedVariableOrParameterName>User::IntParameter_Channel6</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>VarcharParameter</ParameterName>
+                    <BindedVariableOrParameterName>User::VarcharParameter_Channel6</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>PackageId</ParameterName>
+                    <BindedVariableOrParameterName>User::PackageId_Channel6</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Project</ParameterName>
+                    <BindedVariableOrParameterName>User::Project_Channel6</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>PackageName</ParameterName>
+                    <BindedVariableOrParameterName>User::PackageName_Channel6</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Use32BitRunTime</ParameterName>
+                    <BindedVariableOrParameterName>User::Use32BitRunTime_Channel6</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>CatalogLoggingLevel</ParameterName>
+                    <BindedVariableOrParameterName>User::CatalogLoggingLevel_Channel6</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>JobId</ParameterName>
+                    <BindedVariableOrParameterName>User::JobId</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                </ExecutePackageTask>
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\SEQ_ExecutionFactory\FOR_ExecutionPackage\EPT_PackageExecutionFactory CH7"
+              DTS:CreationName="SSIS.ExecutePackageTask.3"
+              DTS:Description="Execute Package Task"
+              DTS:DisableEventHandlers="True"
+              DTS:DTSID="{727ef08d-dfd8-4bd6-becb-49ee52e38e24}"
+              DTS:ExecutableType="SSIS.ExecutePackageTask.3"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="EPT_PackageExecutionFactory CH7"
+              DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:PropertyExpression
+                DTS:Name="Disable">@[User::PackageName_Channel7] == "Disable Channel"</DTS:PropertyExpression>
+              <DTS:ObjectData>
+                <ExecutePackageTask>
+                  <UseProjectReference>True</UseProjectReference>
+                  <PackageName>EtlPackageExecutionFactory.dtsx</PackageName>
+                  <ParameterAssignment>
+                    <ParameterName>ChannelId</ParameterName>
+                    <BindedVariableOrParameterName>User::Channel_7</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>ExecutionId</ParameterName>
+                    <BindedVariableOrParameterName>User::ExecutionId</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Folder</ParameterName>
+                    <BindedVariableOrParameterName>User::Folder_Channel7</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>IntParameter</ParameterName>
+                    <BindedVariableOrParameterName>User::IntParameter_Channel7</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>VarcharParameter</ParameterName>
+                    <BindedVariableOrParameterName>User::VarcharParameter_Channel7</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>PackageId</ParameterName>
+                    <BindedVariableOrParameterName>User::PackageId_Channel7</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Project</ParameterName>
+                    <BindedVariableOrParameterName>User::Project_Channel7</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>PackageName</ParameterName>
+                    <BindedVariableOrParameterName>User::PackageName_Channel7</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Use32BitRunTime</ParameterName>
+                    <BindedVariableOrParameterName>User::Use32BitRunTime_Channel7</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>CatalogLoggingLevel</ParameterName>
+                    <BindedVariableOrParameterName>User::CatalogLoggingLevel_Channel7</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>JobId</ParameterName>
+                    <BindedVariableOrParameterName>User::JobId</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                </ExecutePackageTask>
+              </DTS:ObjectData>
+            </DTS:Executable>
+            <DTS:Executable
+              DTS:refId="Package\SEQ_ExecutionFactory\FOR_ExecutionPackage\EPT_PackageExecutionFactory CH8"
+              DTS:CreationName="SSIS.ExecutePackageTask.3"
+              DTS:Description="Execute Package Task"
+              DTS:DisableEventHandlers="True"
+              DTS:DTSID="{f324f94b-a533-45a0-ab62-6adcb1364c39}"
+              DTS:ExecutableType="SSIS.ExecutePackageTask.3"
+              DTS:LocaleID="-1"
+              DTS:ObjectName="EPT_PackageExecutionFactory CH8"
+              DTS:TaskContact="Microsoft Corporation; Microsoft SQL Server; Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+              <DTS:Variables />
+              <DTS:PropertyExpression
+                DTS:Name="Disable">@[User::PackageName_Channel8] == "Disable Channel"</DTS:PropertyExpression>
+              <DTS:ObjectData>
+                <ExecutePackageTask>
+                  <UseProjectReference>True</UseProjectReference>
+                  <PackageName>EtlPackageExecutionFactory.dtsx</PackageName>
+                  <ParameterAssignment>
+                    <ParameterName>ChannelId</ParameterName>
+                    <BindedVariableOrParameterName>User::Channel_8</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>ExecutionId</ParameterName>
+                    <BindedVariableOrParameterName>User::ExecutionId</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Folder</ParameterName>
+                    <BindedVariableOrParameterName>User::Folder_Channel8</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>IntParameter</ParameterName>
+                    <BindedVariableOrParameterName>User::IntParameter_Channel8</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>VarcharParameter</ParameterName>
+                    <BindedVariableOrParameterName>User::VarcharParameter_Channel8</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>PackageId</ParameterName>
+                    <BindedVariableOrParameterName>User::PackageId_Channel8</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Project</ParameterName>
+                    <BindedVariableOrParameterName>User::Project_Channel8</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>PackageName</ParameterName>
+                    <BindedVariableOrParameterName>User::PackageName_Channel8</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>Use32BitRunTime</ParameterName>
+                    <BindedVariableOrParameterName>User::Use32BitRunTime_Channel8</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>CatalogLoggingLevel</ParameterName>
+                    <BindedVariableOrParameterName>User::CatalogLoggingLevel_Channel8</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                  <ParameterAssignment>
+                    <ParameterName>JobId</ParameterName>
+                    <BindedVariableOrParameterName>User::JobId</BindedVariableOrParameterName>
+                  </ParameterAssignment>
+                </ExecutePackageTask>
+              </DTS:ObjectData>
+            </DTS:Executable>
+          </DTS:Executables>
+          <DTS:ForEachVariableMappings>
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{C097E80F-9D7F-4054-8375-B851AC0872D6}"
+              DTS:ObjectName="{C097E80F-9D7F-4054-8375-B851AC0872D6}"
+              DTS:ValueIndex="0"
+              DTS:VariableName="User::PackageName_Channel1" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{5C381C9A-79BE-4704-AAEE-4D5EDB695D95}"
+              DTS:ObjectName="{5C381C9A-79BE-4704-AAEE-4D5EDB695D95}"
+              DTS:ValueIndex="1"
+              DTS:VariableName="User::PackageId_Channel1" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{F059F50B-4E69-4A59-B832-71E2FFF49788}"
+              DTS:ObjectName="{F059F50B-4E69-4A59-B832-71E2FFF49788}"
+              DTS:ValueIndex="2"
+              DTS:VariableName="User::IntParameter_Channel1" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{6AED8CAB-F759-4F7B-8CDB-470932AC8FC3}"
+              DTS:ObjectName="{6AED8CAB-F759-4F7B-8CDB-470932AC8FC3}"
+              DTS:ValueIndex="3"
+              DTS:VariableName="User::VarcharParameter_Channel1" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{591FBA20-40AC-476B-AB0D-9A7A341718EC}"
+              DTS:ObjectName="{591FBA20-40AC-476B-AB0D-9A7A341718EC}"
+              DTS:ValueIndex="4"
+              DTS:VariableName="User::Project_Channel1" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{4CF450F3-D4CC-45E6-B318-47C6AC0CAA1A}"
+              DTS:ObjectName="{4CF450F3-D4CC-45E6-B318-47C6AC0CAA1A}"
+              DTS:ValueIndex="5"
+              DTS:VariableName="User::Folder_Channel1" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{AB85CA1E-7C01-4149-A723-6AC7C5E75726}"
+              DTS:ObjectName="{AB85CA1E-7C01-4149-A723-6AC7C5E75726}"
+              DTS:ValueIndex="6"
+              DTS:VariableName="User::Use32BitRunTime_Channel1" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{22FFD6E5-059E-4342-B1E3-126F438CF328}"
+              DTS:ObjectName="{22FFD6E5-059E-4342-B1E3-126F438CF328}"
+              DTS:ValueIndex="7"
+              DTS:VariableName="User::CatalogLoggingLevel_Channel1" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{A1ADA70E-532C-4FB6-8C34-5FA70C62B7F2}"
+              DTS:ObjectName="{A1ADA70E-532C-4FB6-8C34-5FA70C62B7F2}"
+              DTS:ValueIndex="8"
+              DTS:VariableName="User::PackageName_Channel2" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{ADB1E261-79AF-4F12-A0B5-0C9DDF413EDA}"
+              DTS:ObjectName="{ADB1E261-79AF-4F12-A0B5-0C9DDF413EDA}"
+              DTS:ValueIndex="9"
+              DTS:VariableName="User::PackageId_Channel2" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{2D5BA89A-92B4-4C5D-917E-F9CD46EBC37D}"
+              DTS:ObjectName="{2D5BA89A-92B4-4C5D-917E-F9CD46EBC37D}"
+              DTS:ValueIndex="10"
+              DTS:VariableName="User::IntParameter_Channel2" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{38880A3E-A02E-4A8D-AB3C-40458D18FFA0}"
+              DTS:ObjectName="{38880A3E-A02E-4A8D-AB3C-40458D18FFA0}"
+              DTS:ValueIndex="11"
+              DTS:VariableName="User::VarcharParameter_Channel2" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{210EC323-7D4C-4B26-98FC-A74958DB8446}"
+              DTS:ObjectName="{210EC323-7D4C-4B26-98FC-A74958DB8446}"
+              DTS:ValueIndex="12"
+              DTS:VariableName="User::Project_Channel2" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{B767C8B7-FB80-4554-8E49-58DEB29F3674}"
+              DTS:ObjectName="{B767C8B7-FB80-4554-8E49-58DEB29F3674}"
+              DTS:ValueIndex="13"
+              DTS:VariableName="User::Folder_Channel2" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{8BC4020E-861A-4B42-A2F9-8AC1992505C4}"
+              DTS:ObjectName="{8BC4020E-861A-4B42-A2F9-8AC1992505C4}"
+              DTS:ValueIndex="14"
+              DTS:VariableName="User::Use32BitRunTime_Channel2" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{0A7E63F5-71E7-4B0D-9EE5-C44260059D24}"
+              DTS:ObjectName="{0A7E63F5-71E7-4B0D-9EE5-C44260059D24}"
+              DTS:ValueIndex="15"
+              DTS:VariableName="User::CatalogLoggingLevel_Channel2" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{3E3DBC47-45DA-4B1C-B9EE-004536402C2A}"
+              DTS:ObjectName="{3E3DBC47-45DA-4B1C-B9EE-004536402C2A}"
+              DTS:ValueIndex="16"
+              DTS:VariableName="User::PackageName_Channel3" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{771D50C2-FD05-4AAD-8EF6-9322A2E4C0EF}"
+              DTS:ObjectName="{771D50C2-FD05-4AAD-8EF6-9322A2E4C0EF}"
+              DTS:ValueIndex="17"
+              DTS:VariableName="User::PackageId_Channel3" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{9E63A2F4-22BC-4BEA-ACB9-91C2491FBD57}"
+              DTS:ObjectName="{9E63A2F4-22BC-4BEA-ACB9-91C2491FBD57}"
+              DTS:ValueIndex="18"
+              DTS:VariableName="User::IntParameter_Channel3" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{3C115726-8CCE-43DC-9FC8-90BD0F8B1BC7}"
+              DTS:ObjectName="{3C115726-8CCE-43DC-9FC8-90BD0F8B1BC7}"
+              DTS:ValueIndex="19"
+              DTS:VariableName="User::VarcharParameter_Channel3" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{2A729249-DC8E-4CE2-97FB-5CB6FAA3D7C2}"
+              DTS:ObjectName="{2A729249-DC8E-4CE2-97FB-5CB6FAA3D7C2}"
+              DTS:ValueIndex="20"
+              DTS:VariableName="User::Project_Channel3" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{984D467E-3BBA-44D8-BD8D-E276180CC562}"
+              DTS:ObjectName="{984D467E-3BBA-44D8-BD8D-E276180CC562}"
+              DTS:ValueIndex="21"
+              DTS:VariableName="User::Folder_Channel3" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{44C0F2C4-6981-45ED-9886-DA00F29CE271}"
+              DTS:ObjectName="{44C0F2C4-6981-45ED-9886-DA00F29CE271}"
+              DTS:ValueIndex="22"
+              DTS:VariableName="User::Use32BitRunTime_Channel3" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{5318335D-2BE6-4A19-AD03-8006CF1581DD}"
+              DTS:ObjectName="{5318335D-2BE6-4A19-AD03-8006CF1581DD}"
+              DTS:ValueIndex="23"
+              DTS:VariableName="User::CatalogLoggingLevel_Channel3" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{938E926E-278B-4FF9-AF13-F534CFF8E818}"
+              DTS:ObjectName="{938E926E-278B-4FF9-AF13-F534CFF8E818}"
+              DTS:ValueIndex="24"
+              DTS:VariableName="User::PackageName_Channel4" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{E9DF9C97-DFA7-4D2E-8188-EAB7889C5FF1}"
+              DTS:ObjectName="{E9DF9C97-DFA7-4D2E-8188-EAB7889C5FF1}"
+              DTS:ValueIndex="25"
+              DTS:VariableName="User::PackageId_Channel4" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{CE7AE704-2A97-4C78-A84C-C4D127EC0ADA}"
+              DTS:ObjectName="{CE7AE704-2A97-4C78-A84C-C4D127EC0ADA}"
+              DTS:ValueIndex="26"
+              DTS:VariableName="User::IntParameter_Channel4" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{7DC07479-EBF1-4E8B-8EE7-59AD057D7D7A}"
+              DTS:ObjectName="{7DC07479-EBF1-4E8B-8EE7-59AD057D7D7A}"
+              DTS:ValueIndex="27"
+              DTS:VariableName="User::VarcharParameter_Channel4" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{DBFB5A00-09DC-4E4D-A1C8-F19ED3AEF4C4}"
+              DTS:ObjectName="{DBFB5A00-09DC-4E4D-A1C8-F19ED3AEF4C4}"
+              DTS:ValueIndex="28"
+              DTS:VariableName="User::Project_Channel4" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{97F3EC8B-DDAA-4B3B-9D48-800332A5D459}"
+              DTS:ObjectName="{97F3EC8B-DDAA-4B3B-9D48-800332A5D459}"
+              DTS:ValueIndex="29"
+              DTS:VariableName="User::Folder_Channel4" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{470B8A13-51DB-457B-9E86-AAB5384A7443}"
+              DTS:ObjectName="{470B8A13-51DB-457B-9E86-AAB5384A7443}"
+              DTS:ValueIndex="30"
+              DTS:VariableName="User::Use32BitRunTime_Channel4" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{0250C01A-9B57-471C-AA42-EEF4B0E7F438}"
+              DTS:ObjectName="{0250C01A-9B57-471C-AA42-EEF4B0E7F438}"
+              DTS:ValueIndex="31"
+              DTS:VariableName="User::CatalogLoggingLevel_Channel4" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{C8281897-D132-4B00-B6F5-6F20CEDB4D2C}"
+              DTS:ObjectName="{C8281897-D132-4B00-B6F5-6F20CEDB4D2C}"
+              DTS:ValueIndex="32"
+              DTS:VariableName="User::PackageName_Channel5" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{2589031A-BA10-4113-B0D0-4DEDA9C640B7}"
+              DTS:ObjectName="{2589031A-BA10-4113-B0D0-4DEDA9C640B7}"
+              DTS:ValueIndex="33"
+              DTS:VariableName="User::PackageId_Channel5" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{6800798B-D6DE-418E-B9FD-DF49FB8DD183}"
+              DTS:ObjectName="{6800798B-D6DE-418E-B9FD-DF49FB8DD183}"
+              DTS:ValueIndex="34"
+              DTS:VariableName="User::IntParameter_Channel5" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{DA06F3DF-ED3E-4D71-B8B5-E73F302E4EBC}"
+              DTS:ObjectName="{DA06F3DF-ED3E-4D71-B8B5-E73F302E4EBC}"
+              DTS:ValueIndex="35"
+              DTS:VariableName="User::VarcharParameter_Channel5" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{A9B6FE7B-C115-4AF1-87F7-B5A12EE5EDF2}"
+              DTS:ObjectName="{A9B6FE7B-C115-4AF1-87F7-B5A12EE5EDF2}"
+              DTS:ValueIndex="36"
+              DTS:VariableName="User::Project_Channel5" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{D11C55A1-DF54-4A6C-B2B4-DBFCCD6B0C56}"
+              DTS:ObjectName="{D11C55A1-DF54-4A6C-B2B4-DBFCCD6B0C56}"
+              DTS:ValueIndex="37"
+              DTS:VariableName="User::Folder_Channel5" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{4B6B052F-22BC-4AF7-8519-BBE61E1F90CC}"
+              DTS:ObjectName="{4B6B052F-22BC-4AF7-8519-BBE61E1F90CC}"
+              DTS:ValueIndex="38"
+              DTS:VariableName="User::Use32BitRunTime_Channel5" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{BBA235C6-A31A-4DC4-B9C6-E07E5B0CBC3D}"
+              DTS:ObjectName="{BBA235C6-A31A-4DC4-B9C6-E07E5B0CBC3D}"
+              DTS:ValueIndex="39"
+              DTS:VariableName="User::CatalogLoggingLevel_Channel5" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{D4305C19-DBF4-44CD-87C3-2891EFAC05A3}"
+              DTS:ObjectName="{D4305C19-DBF4-44CD-87C3-2891EFAC05A3}"
+              DTS:ValueIndex="40"
+              DTS:VariableName="User::PackageName_Channel6" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{1D9B4597-054A-43D0-84EC-0AC85B746251}"
+              DTS:ObjectName="{1D9B4597-054A-43D0-84EC-0AC85B746251}"
+              DTS:ValueIndex="41"
+              DTS:VariableName="User::PackageId_Channel6" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{3B73AE0E-2FCE-44A9-9CF5-3D8C2213A202}"
+              DTS:ObjectName="{3B73AE0E-2FCE-44A9-9CF5-3D8C2213A202}"
+              DTS:ValueIndex="42"
+              DTS:VariableName="User::IntParameter_Channel6" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{67EB1B2E-68B4-4F0E-A8E6-E72BC6D985FD}"
+              DTS:ObjectName="{67EB1B2E-68B4-4F0E-A8E6-E72BC6D985FD}"
+              DTS:ValueIndex="43"
+              DTS:VariableName="User::VarcharParameter_Channel6" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{A7ACC98E-FAB3-4BA4-8303-62C4CB5851A4}"
+              DTS:ObjectName="{A7ACC98E-FAB3-4BA4-8303-62C4CB5851A4}"
+              DTS:ValueIndex="44"
+              DTS:VariableName="User::Project_Channel6" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{82AF3FB6-8832-4C44-A312-A366AF13016F}"
+              DTS:ObjectName="{82AF3FB6-8832-4C44-A312-A366AF13016F}"
+              DTS:ValueIndex="45"
+              DTS:VariableName="User::Folder_Channel6" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{2BFB68C4-4FB4-49D0-909E-48F957D324D7}"
+              DTS:ObjectName="{2BFB68C4-4FB4-49D0-909E-48F957D324D7}"
+              DTS:ValueIndex="46"
+              DTS:VariableName="User::Use32BitRunTime_Channel6" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{AA8C78AF-FF4D-425B-9AEF-63AC458BAB95}"
+              DTS:ObjectName="{AA8C78AF-FF4D-425B-9AEF-63AC458BAB95}"
+              DTS:ValueIndex="47"
+              DTS:VariableName="User::CatalogLoggingLevel_Channel6" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{349A865B-444B-4A11-AA81-5A9D64A25F8D}"
+              DTS:ObjectName="{349A865B-444B-4A11-AA81-5A9D64A25F8D}"
+              DTS:ValueIndex="48"
+              DTS:VariableName="User::PackageName_Channel7" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{AA7DC18F-1AA8-4A12-A46B-063439EB4859}"
+              DTS:ObjectName="{AA7DC18F-1AA8-4A12-A46B-063439EB4859}"
+              DTS:ValueIndex="49"
+              DTS:VariableName="User::PackageId_Channel7" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{282D22F1-B591-404D-885F-57896BBA912C}"
+              DTS:ObjectName="{282D22F1-B591-404D-885F-57896BBA912C}"
+              DTS:ValueIndex="50"
+              DTS:VariableName="User::IntParameer_Channel7" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{A36187CD-2030-4563-88F6-FC2C3FBB163E}"
+              DTS:ObjectName="{A36187CD-2030-4563-88F6-FC2C3FBB163E}"
+              DTS:ValueIndex="51"
+              DTS:VariableName="User::VarcharParameter_Channel7" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{27C11A84-C2C5-44BF-A83A-843F3311C017}"
+              DTS:ObjectName="{27C11A84-C2C5-44BF-A83A-843F3311C017}"
+              DTS:ValueIndex="52"
+              DTS:VariableName="User::Project_Channel7" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{1CE367C3-BB48-4050-8103-AFF7F6893BFE}"
+              DTS:ObjectName="{1CE367C3-BB48-4050-8103-AFF7F6893BFE}"
+              DTS:ValueIndex="53"
+              DTS:VariableName="User::Folder_Channel7" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{CE5017E3-1487-4992-8DB8-D8F0F9F428E5}"
+              DTS:ObjectName="{CE5017E3-1487-4992-8DB8-D8F0F9F428E5}"
+              DTS:ValueIndex="54"
+              DTS:VariableName="User::Use32BitRunTime_Channel7" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{84856A93-E18A-47B5-9F00-C4B7D3A4ECB3}"
+              DTS:ObjectName="{84856A93-E18A-47B5-9F00-C4B7D3A4ECB3}"
+              DTS:ValueIndex="55"
+              DTS:VariableName="User::CatalogLoggingLevel_Channel7" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{D2D72E2F-9F2A-4726-B8EF-5E7EC0A3315A}"
+              DTS:ObjectName="{D2D72E2F-9F2A-4726-B8EF-5E7EC0A3315A}"
+              DTS:ValueIndex="56"
+              DTS:VariableName="User::PackageName_Channel8" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{9D3EC674-ED18-4FAE-98DA-2EB0012F5BBD}"
+              DTS:ObjectName="{9D3EC674-ED18-4FAE-98DA-2EB0012F5BBD}"
+              DTS:ValueIndex="57"
+              DTS:VariableName="User::PackageId_Channel8" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{D5EC165B-4DC8-42D8-B6CC-CCCDD3A4D306}"
+              DTS:ObjectName="{D5EC165B-4DC8-42D8-B6CC-CCCDD3A4D306}"
+              DTS:ValueIndex="58"
+              DTS:VariableName="User::IntParameter_Channel8" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{4540DFBC-39F2-4032-80BB-5B387A41724A}"
+              DTS:ObjectName="{4540DFBC-39F2-4032-80BB-5B387A41724A}"
+              DTS:ValueIndex="59"
+              DTS:VariableName="User::VarcharParameter_Channel8" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{91C48273-592E-4F0A-B3C8-B16E3432C152}"
+              DTS:ObjectName="{91C48273-592E-4F0A-B3C8-B16E3432C152}"
+              DTS:ValueIndex="60"
+              DTS:VariableName="User::Project_Channel8" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{096BFD48-918D-43A1-AEE4-648CCE1F097F}"
+              DTS:ObjectName="{096BFD48-918D-43A1-AEE4-648CCE1F097F}"
+              DTS:ValueIndex="61"
+              DTS:VariableName="User::Folder_Channel8" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{D1B714C9-A275-48AB-9FFE-095863D908E6}"
+              DTS:ObjectName="{D1B714C9-A275-48AB-9FFE-095863D908E6}"
+              DTS:ValueIndex="62"
+              DTS:VariableName="User::Use32BitRunTime_Channel8" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{BC1A6EE2-5144-43B1-AE1B-DF23E5387E9D}"
+              DTS:ObjectName="{BC1A6EE2-5144-43B1-AE1B-DF23E5387E9D}"
+              DTS:ValueIndex="63"
+              DTS:VariableName="User::CatalogLoggingLevel_Channel8" />
+            <DTS:ForEachVariableMapping
+              DTS:CreationName=""
+              DTS:DTSID="{B9A7EC73-9351-49F4-AA93-643D72BC4C85}"
+              DTS:ObjectName="{B9A7EC73-9351-49F4-AA93-643D72BC4C85}"
+              DTS:ValueIndex="64"
+              DTS:VariableName="User::ExecutionOrder" />
+          </DTS:ForEachVariableMappings>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SQL_GetChildPackageDetails"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="Execute SQL Task"
+      DTS:DisableEventHandlers="True"
+      DTS:DTSID="{BAFDFCFE-F015-40DD-8274-EA30F98AD0BB}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SQL_GetChildPackageDetails"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{D69E1AA2-90CF-4E6B-AB73-EF676E6C34A1}"
+          SQLTask:SqlStatementSource="SELECT [PackageName_Channel1]&#xA;              ,[PackageId_Channel1]&#xA;              ,[IntParameter_Channel1]&#xA;              ,[VarcharParameter_Channel1]&#xA;              ,[Project_Channel1]&#xA;              ,[Folder_Channel1]&#xA;              ,[Use32BitRunTime_Channel1]&#xA;              ,[CatalogLoggingLevel_Channel1]&#xA;              ,[PackageName_Channel2]&#xA;              ,[PackageId_Channel2]&#xA;              ,[IntParameter_Channel2]&#xA;              ,[VarcharParameter_Channel2]&#xA;              ,[Project_Channel2]&#xA;              ,[Folder_Channel2]&#xA;              ,[Use32BitRunTime_Channel2]&#xA;              ,[CatalogLoggingLevel_Channel2]&#xA;              ,[PackageName_Channel3]&#xA;              ,[PackageId_Channel3]&#xA;              ,[IntParameter_Channel3]&#xA;              ,[VarcharParameter_Channel3]&#xA;              ,[Project_Channel3]&#xA;              ,[Folder_Channel3]&#xA;              ,[Use32BitRunTime_Channel3]&#xA;              ,[CatalogLoggingLevel_Channel3]&#xA;              ,[PackageName_Channel4]&#xA;              ,[PackageId_Channel4]&#xA;              ,[IntParameter_Channel4]&#xA;              ,[VarcharParameter_Channel4]&#xA;              ,[Project_Channel4]&#xA;              ,[Folder_Channel4]&#xA;              ,[Use32BitRunTime_Channel4]&#xA;              ,[CatalogLoggingLevel_Channel4]&#xA;              ,[PackageName_Channel5]&#xA;              ,[PackageId_Channel5]&#xA;              ,[IntParameter_Channel5]&#xA;              ,[VarcharParameter_Channel5]&#xA;              ,[Project_Channel5]&#xA;              ,[Folder_Channel5]&#xA;              ,[Use32BitRunTime_Channel5]&#xA;              ,[CatalogLoggingLevel_Channel5]&#xA;              ,[PackageName_Channel6]&#xA;              ,[PackageId_Channel6]&#xA;              ,[IntParameter_Channel6]&#xA;              ,[VarcharParameter_Channel6]&#xA;              ,[Project_Channel6]&#xA;              ,[Folder_Channel6]&#xA;              ,[Use32BitRunTime_Channel6]&#xA;              ,[CatalogLoggingLevel_Channel6]&#xA;              ,[PackageName_Channel7]&#xA;              ,[PackageId_Channel7]&#xA;              ,[IntParameter_Channel7]&#xA;              ,[VarcharParameter_Channel7]&#xA;              ,[Project_Channel7]&#xA;              ,[Folder_Channel7]&#xA;              ,[Use32BitRunTime_Channel7]&#xA;              ,[CatalogLoggingLevel_Channel7]&#xA;              ,[PackageName_Channel8]&#xA;              ,[PackageId_Channel8]&#xA;              ,[IntParameter_Channel8]&#xA;              ,[VarcharParameter_Channel8]&#xA;              ,[Project_Channel8]&#xA;              ,[Folder_Channel8]&#xA;              ,[Use32BitRunTime_Channel8]&#xA;              ,[CatalogLoggingLevel_Channel8]&#xA;              ,[ExecutionOrder]&#xA;  FROM [dbo].[JobSchedulePackage]&#xA; WHERE JobName = 'Test'&#xA;ORDER BY ExecutionOrder"
+          SQLTask:ResultType="ResultSetType_Rowset" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="0"
+            SQLTask:DtsVariableName="User::PackagesToRun" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SQL_GetExecutionId"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="Execute SQL Task"
+      DTS:DisableEventHandlers="True"
+      DTS:DTSID="{454BA5DA-EA26-493B-85C4-1ADBCB56AE8F}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SQL_GetExecutionId"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{8980845A-ADCC-4194-8FF3-614ED8A3F016}"
+          SQLTask:SqlStatementSource="EXECUTE Logging.usp_GetExecutionId ?, ?, ?, ?, ? OUTPUT" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="User::JobId"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="1"
+            SQLTask:DtsVariableName="$Package::ApplicationId"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="2"
+            SQLTask:DtsVariableName="System::UserName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="3"
+            SQLTask:DtsVariableName="System::MachineName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="4"
+            SQLTask:DtsVariableName="User::ExecutionId"
+            SQLTask:ParameterDirection="Output"
+            SQLTask:DataType="3"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SQL_GetJobId"
+      DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:Description="Execute SQL Task"
+      DTS:DisableEventHandlers="True"
+      DTS:DTSID="{47CFCF23-52B5-4F13-879A-4A77F87A06C3}"
+      DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SQL_GetJobId"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{D69E1AA2-90CF-4E6B-AB73-EF676E6C34A1}"
+          SQLTask:SqlStatementSource="SELECT Id FROM Job WHERE Name = ?"
+          SQLTask:ResultType="ResultSetType_SingleRow" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ResultBinding
+            SQLTask:ResultName="Id"
+            SQLTask:DtsVariableName="User::JobId" />
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="0"
+            SQLTask:DtsVariableName="$Package::JobName"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="129"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{6B491BB2-1414-4066-A286-0E5A26CF290A}"
+      DTS:From="Package\SQL_GetChildPackageDetails"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\SEQ_ExecutionFactory" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{860648C7-6EF1-414C-AAA3-4B2A0E1806FA}"
+      DTS:From="Package\SQL_GetJobId"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\SQL_GetExecutionId" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{BFF1494C-0623-444B-9498-609B7A0B9706}"
+      DTS:From="Package\SQL_GetExecutionId"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\SQL_GetChildPackageDetails" />
+  </DTS:PrecedenceConstraints>
+  <DTS:EventHandlers>
+    <DTS:EventHandler
+      DTS:refId="Package.EventHandlers[OnError]"
+      DTS:CreationName="OnError"
+      DTS:DTSID="{B9CD632D-5FED-46D8-A020-F1BFF512CF07}"
+      DTS:EventID="7274563"
+      DTS:EventName="OnError"
+      DTS:LocaleID="-1">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:Description="The propagate property of the event"
+          DTS:DTSID="{3DF83044-F16F-461C-9BB7-34143AF075F5}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="System"
+          DTS:ObjectName="Propagate">
+          <DTS:VariableValue
+            DTS:DataType="11">-1</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package.EventHandlers[OnError]\SQL_JobCompletedWithError"
+          DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{72569934-48E7-4A6D-8D03-EA48AFB42EF4}"
+          DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="SQL_JobCompletedWithError"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{8980845A-ADCC-4194-8FF3-614ED8A3F016}"
+              SQLTask:SqlStatementSource="EXECUTE [Logging].[usp_LogJobExecutionError] &#xA;   ?&#xA;  ,?&#xA;  ,?&#xA;  ,?&#xA;  ,?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::JobId"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="1"
+                SQLTask:DtsVariableName="User::ExecutionId"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="2"
+                SQLTask:DtsVariableName="System::UserName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="3"
+                SQLTask:DtsVariableName="System::MachineName"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="4"
+                SQLTask:DtsVariableName="System::ErrorDescription"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="129"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:EventHandler>
+    <DTS:EventHandler
+      DTS:refId="Package.EventHandlers[OnPostExecute]"
+      DTS:CreationName="OnPostExecute"
+      DTS:DTSID="{8952C3A7-B0ED-4906-B3D8-3D9978BAF78D}"
+      DTS:EventID="401797308"
+      DTS:EventName="OnPostExecute"
+      DTS:LocaleID="-1">
+      <DTS:Variables>
+        <DTS:Variable
+          DTS:CreationName=""
+          DTS:Description="The propagate property of the event"
+          DTS:DTSID="{A4CAAC6B-FD64-4F63-AD0B-E7A69502C273}"
+          DTS:IncludeInDebugDump="6789"
+          DTS:Namespace="System"
+          DTS:ObjectName="Propagate">
+          <DTS:VariableValue
+            DTS:DataType="11">-1</DTS:VariableValue>
+        </DTS:Variable>
+      </DTS:Variables>
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package.EventHandlers[OnPostExecute]\SQL_JobCompleted"
+          DTS:CreationName="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{1e74db59-f447-41f8-a9bc-1d26f929c793}"
+          DTS:ExecutableType="Microsoft.SqlServer.Dts.Tasks.ExecuteSQLTask.ExecuteSQLTask, Microsoft.SqlServer.SQLTask, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="SQL_JobCompleted"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2012; © 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{8980845A-ADCC-4194-8FF3-614ED8A3F016}"
+              SQLTask:SqlStatementSource="EXECUTE [Logging].[usp_LogJobExecutionCompletion] &#xA;   ?&#xA;  ,?" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="0"
+                SQLTask:DtsVariableName="User::JobId"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+              <SQLTask:ParameterBinding
+                SQLTask:ParameterName="1"
+                SQLTask:DtsVariableName="User::ExecutionId"
+                SQLTask:ParameterDirection="Input"
+                SQLTask:DataType="3"
+                SQLTask:ParameterSize="-1" />
+            </SQLTask:SqlTaskData>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+    </DTS:EventHandler>
+  </DTS:EventHandlers>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql11">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="245,42"
+          Id="Package\SEQ_ExecutionFactory\FOR_ExecutionPackage\EPT_PackageExecutionFactory CH1"
+          TopLeft="5.5,5.5" />
+        <NodeLayout
+          Size="245,42"
+          Id="Package\SEQ_ExecutionFactory\FOR_ExecutionPackage\EPT_PackageExecutionFactory CH2"
+          TopLeft="311.5,5.5" />
+        <NodeLayout
+          Size="245,42"
+          Id="Package\SEQ_ExecutionFactory\FOR_ExecutionPackage\EPT_PackageExecutionFactory CH3"
+          TopLeft="617.5,5.5" />
+        <NodeLayout
+          Size="245,42"
+          Id="Package\SEQ_ExecutionFactory\FOR_ExecutionPackage\EPT_PackageExecutionFactory CH4"
+          TopLeft="923.5,5.49999999999989" />
+        <NodeLayout
+          Size="245,42"
+          Id="Package\SEQ_ExecutionFactory\FOR_ExecutionPackage\EPT_PackageExecutionFactory CH5"
+          TopLeft="1229.5,5.49999999999989" />
+        <NodeLayout
+          Size="245,42"
+          Id="Package\SEQ_ExecutionFactory\FOR_ExecutionPackage\EPT_PackageExecutionFactory CH6"
+          TopLeft="1535.5,5.49999999999989" />
+        <NodeLayout
+          Size="245,42"
+          Id="Package\SEQ_ExecutionFactory\FOR_ExecutionPackage\EPT_PackageExecutionFactory CH7"
+          TopLeft="1841.5,5.49999999999977" />
+        <NodeLayout
+          Size="245,42"
+          Id="Package\SEQ_ExecutionFactory\FOR_ExecutionPackage\EPT_PackageExecutionFactory CH8"
+          TopLeft="2147.5,5.49999999999977" />
+        <ContainerLayout
+          HeaderHeight="43.924528301886795"
+          IsExpanded="True"
+          PanelSize="2398,102"
+          Size="2398,146"
+          Id="Package\SEQ_ExecutionFactory\FOR_ExecutionPackage"
+          TopLeft="5.5,5.5" />
+        <ContainerLayout
+          HeaderHeight="43.924528301886795"
+          IsExpanded="True"
+          PanelSize="2409,206"
+          Size="2409,250"
+          Id="Package\SEQ_ExecutionFactory"
+          TopLeft="5.50000000000023,311.5" />
+        <NodeLayout
+          Size="214,42"
+          Id="Package\SQL_GetChildPackageDetails"
+          TopLeft="1103,209.5" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\SQL_GetExecutionId"
+          TopLeft="1128.5,107.5" />
+        <NodeLayout
+          Size="146,42"
+          Id="Package\SQL_GetJobId"
+          TopLeft="1137,5.49999999999977" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="1210,251.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60.0000000000001"
+              Start="0,0"
+              End="0,52.5000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="1213,47.4999999999998">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="1213,149.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <DtsEventHandler
+    design-time-name="Package.EventHandlers[OnError]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="215,42"
+          Id="Package.EventHandlers[OnError]\SQL_JobCompletedWithError"
+          TopLeft="262,216" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+  <DtsEventHandler
+    design-time-name="Package.EventHandlers[OnPostExecute]">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="170,42"
+          Id="Package.EventHandlers[OnPostExecute]\SQL_JobCompleted"
+          TopLeft="60,60" />
+      </GraphLayout>
+    </LayoutInfo>
+  </DtsEventHandler>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
