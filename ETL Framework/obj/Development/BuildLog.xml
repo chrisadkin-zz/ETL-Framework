@@ -8,17 +8,17 @@
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>EtlFrameworkRuntime.dtsx</Name>
-      <LastWriteTime>2015-07-23T21:16:42.6988171Z</LastWriteTime>
+      <LastWriteTime>2015-10-15T22:42:45.4398302Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>TaskPackageTemplate.dtsx</Name>
-      <LastWriteTime>2015-04-27T15:35:54.0968658Z</LastWriteTime>
+      <LastWriteTime>2015-10-15T22:43:18.7094835Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>EtlPackageExecutionFactory.dtsx</Name>
-      <LastWriteTime>2015-07-22T21:30:31.4989787Z</LastWriteTime>
+      <LastWriteTime>2015-10-15T22:40:35.6901043Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

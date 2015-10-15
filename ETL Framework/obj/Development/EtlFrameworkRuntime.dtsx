@@ -11,8 +11,8 @@
   DTS:LocaleID="2057"
   DTS:ObjectName="EtlFrameworkRuntime"
   DTS:PackageType="5"
-  DTS:VersionBuild="102"
-  DTS:VersionGUID="{165A852D-B474-4962-8AFE-016F54561E26}">
+  DTS:VersionBuild="103"
+  DTS:VersionGUID="{FC3A5E9A-1E66-4B4A-996B-B1A3923E2450}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:PackageParameters>
@@ -2034,7 +2034,7 @@
         <NodeLayout
           Size="146,42"
           Id="Package\SQL_GetJobId"
-          TopLeft="1137,5.49999999999977" />
+          TopLeft="1144,18.4999999999998" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
           TopLeft="1210,251.5">
@@ -2059,18 +2059,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="1213,47.4999999999998">
+          TopLeft="1216.5,60.4999999999998">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,60"
+              EndConnector="0,47.0000000000002"
               Start="0,0"
-              End="0,52.5">
+              End="0,39.5000000000002">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.5" />
+                    End="0,39.5000000000002" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
